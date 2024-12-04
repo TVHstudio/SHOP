@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ShopModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="DONDATHANG">
+    <Key>
+      <PropertyRef Name="STT" />
+    </Key>
+    <Property Name="STT" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MaKH" Type="int" />
+    <Property Name="NgayDat" Type="datetime" />
+    <Property Name="TongSoLuong" Type="int" />
+    <Property Name="TinhTrangGiao" Type="varchar" MaxLength="30" />
+    <Property Name="DaThanhToan" Type="varchar" MaxLength="10" />
+    <Property Name="TongTien" Type="int" />
+  </EntityType>
+  <EntityType Name="DonHang">
+    <Key>
+      <PropertyRef Name="STT" />
+    </Key>
+    <Property Name="STT" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MaDonHang" Type="int" />
+    <Property Name="MaKH" Type="int" />
+    <Property Name="MaSP" Type="int" />
+    <Property Name="TenSP" Type="nvarchar" MaxLength="50" />
+    <Property Name="SoLuong" Type="int" />
+    <Property Name="NgayLap" Type="datetime" />
+    <Property Name="GiaBan" Type="int" />
+    <Property Name="TongTien" Type="int" />
+  </EntityType>
+  <EntityType Name="DonHang1">
+    <Key>
+      <PropertyRef Name="STT" />
+    </Key>
+    <Property Name="STT" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MaDonHang" Type="int" />
+    <Property Name="MaKH" Type="int" />
+    <Property Name="MaSP" Type="int" />
+    <Property Name="TenSP" Type="nvarchar" MaxLength="50" />
+    <Property Name="SoLuong" Type="int" />
+    <Property Name="NgayLap" Type="datetime" />
+    <Property Name="GiaBan" Type="int" />
+    <Property Name="TongTien" Type="int" />
+  </EntityType>
+  <EntityType Name="HangSX">
+    <Key>
+      <PropertyRef Name="MaHangSX" />
+    </Key>
+    <Property Name="MaHangSX" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TenHangSX" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="loaisanpham">
+    <Key>
+      <PropertyRef Name="MaLoaiSP" />
+    </Key>
+    <Property Name="MaLoaiSP" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TenLoaiSP" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="sanpham">
+    <Key>
+      <PropertyRef Name="MaSP" />
+    </Key>
+    <Property Name="MaSP" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TenSP" Type="nvarchar" MaxLength="50" />
+    <Property Name="GiaSP" Type="int" />
+    <Property Name="Hinh" Type="nvarchar" MaxLength="300" />
+    <Property Name="SoLuotXem" Type="int" />
+    <Property Name="SoLuongBan" Type="int" />
+    <Property Name="SoLuongTon" Type="int" />
+    <Property Name="TinhTrang" Type="varchar" MaxLength="10" />
+    <Property Name="NgayNhap" Type="datetime" />
+    <Property Name="MoTa" Type="nvarchar" MaxLength="600" />
+    <Property Name="ChiTiet" Type="ntext" />
+    <Property Name="XuatXu" Type="nvarchar" MaxLength="50" />
+    <Property Name="MaLoaiSP" Type="int" />
+    <Property Name="MaHangSX" Type="int" />
+  </EntityType>
+  <EntityType Name="taikhoan">
+    <Key>
+      <PropertyRef Name="MaTK" />
+    </Key>
+    <Property Name="MaTK" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TenDN" Type="varchar" MaxLength="50" />
+    <Property Name="MatKhau" Type="varchar" MaxLength="50" />
+    <Property Name="HoTen" Type="nvarchar" MaxLength="50" />
+    <Property Name="DiaChi" Type="nvarchar" MaxLength="100" />
+    <Property Name="SDT" Type="int" />
+    <Property Name="Email" Type="varchar" MaxLength="256" />
+    <Property Name="DOB" Type="varchar" MaxLength="11" />
+    <Property Name="MaLoaiTK" Type="int" />
+    <Property Name="Hinh" Type="nvarchar" MaxLength="300" />
+  </EntityType>
+  <EntityContainer Name="ShopModelStoreContainer">
+    <EntitySet Name="DONDATHANG" EntityType="Self.DONDATHANG" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DonHang" EntityType="Self.DonHang" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DonHang1" EntityType="Self.DonHang1" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="HangSX" EntityType="Self.HangSX" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="loaisanpham" EntityType="Self.loaisanpham" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sanpham" EntityType="Self.sanpham" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="taikhoan" EntityType="Self.taikhoan" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

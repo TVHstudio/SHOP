@@ -1,0 +1,171 @@
+﻿<UserControl x:Class="SHOP.GUI.TiemKiem"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SHOP.GUI"
+             xmlns:m="clr-namespace:SHOP.BUS"
+             mc:Ignorable="d" 
+             
+             d:DesignHeight="520" d:DesignWidth="900" Loaded="UserControl_Loaded">
+    <UserControl.Resources>
+        <m:Pages x:Key="dbForWd"></m:Pages>
+        <DataTemplate x:Key="ProductDT">
+            <Grid Background="White">
+                <Border Width="250" Margin="2" BorderThickness="1" BorderBrush="Red" CornerRadius="4" Background="{Binding Path=Background, RelativeSource={RelativeSource Mode=FindAncestor,AncestorType={x:Type ListBoxItem}}}">
+                    <Grid Margin="3">
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Image Width="200" Height="100" Source="{Binding Path=Hinh}"/>
+                        <TextBlock FontSize="16" Foreground="Navy" HorizontalAlignment="Center" TextAlignment="Center" Grid.Row="1" FontWeight="Bold" Text="{Binding Path=TenSP}"/>
+                        <TextBlock Foreground="Red" HorizontalAlignment="Center" TextAlignment="Center"  Grid.Row="2" Text="{Binding Path=GiaSP , StringFormat=Giá :{0:0,0 VNĐ}}"/>
+                    </Grid>
+                </Border>
+            </Grid>
+        </DataTemplate>
+    </UserControl.Resources>
+    <Grid Background="White">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="71*"/>
+            <ColumnDefinition Width="29*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="100"/>
+        </Grid.RowDefinitions>
+        <ScrollViewer Background="Transparent" Grid.Column="3" Margin="0,8,0,0" ScrollViewer.VerticalScrollBarVisibility="Hidden" >
+            <Border  Name="hidden4" BorderBrush="SeaGreen" BorderThickness="1" Padding="5">
+                <StackPanel >
+                    <!--Search-->
+                    <StackPanel  Panel.ZIndex="3" Grid.Column="3">
+                        <WrapPanel Margin="0,10,0,0">
+                            <TextBox BorderThickness="0"  KeyUp="txtTimKiem_KeyDown" KeyDown="txtTimKiem_KeyDown" Name="txtTimKiem" VerticalAlignment="Center" FontSize="18" FontFamily="Tekton Pro Cond" FontWeight="Bold" HorizontalAlignment="Left" Height="30" Width="200" ></TextBox>
+                            <Button BorderThickness="0" Name="btnSearch" Click="btnSearch_Click" ToolTip="Tìm Kiếm"  Width="30" Height="30">
+                                <Image  Width="30" Height="30" Source="/SHOP;component/img/timkiem.png"></Image>
+                            </Button>
+                        </WrapPanel>
+                    </StackPanel>
+
+
+                    <Expander ExpandDirection="Down" IsExpanded="True" Height="auto" >
+                        <Expander.Header>
+                            <TextBlock  FontSize="19" Padding="4" FontFamily=".VnUniverse" Foreground="Brown" Width="178" Height="22"  >LOẠI SẢN PHẨM</TextBlock>
+                        </Expander.Header>
+                        <StackPanel Margin="10,4,0,0">
+                            <ListView ItemsSource="{Binding}" IsSynchronizedWithCurrentItem="True" Padding="2" x:Name="ListDSLSP" ScrollViewer.VerticalScrollBarVisibility="Disabled" SelectionChanged="ListDSLSP_SelectionChanged" >
+                                <ListView.ItemTemplate>
+                                    <DataTemplate>
+                                        <CheckBox Name="checkLoaiSP" IsChecked="True" Margin="4" Foreground="LimeGreen" Tag="{Binding Path=MaLoaiSP}" Content="{Binding Path=TenLoaiSP}"></CheckBox>
+                                    </DataTemplate>
+                                </ListView.ItemTemplate>
+                            </ListView>
+                            <Button Click="btnLocDSLSP_Click" Background="Cyan" Name="btnLocDSLSP" Height="auto" Width="auto">
+                                <TextBlock FontWeight="Bold" Foreground="DarkBlue" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center" Text="Lọc Danh Sách"></TextBlock>
+                            </Button>
+                        </StackPanel>
+                    </Expander>
+
+                    <Expander ExpandDirection="Down" IsExpanded="True" Height="auto" >
+                        <Expander.Header>
+                            <TextBlock  FontSize="19" Padding="4" FontFamily=".VnUniverse" Foreground="Brown" Width="143" Height="22"  >HÃNG SẢN XUẤT</TextBlock>
+                        </Expander.Header>
+                        <StackPanel Margin="10,4,0,0">
+                            <ListView ItemsSource="{Binding}" IsSynchronizedWithCurrentItem="True" Padding="2" x:Name="ListDSNSX" ScrollViewer.VerticalScrollBarVisibility="Disabled"  >
+                                <ListView.ItemTemplate>
+                                    <DataTemplate>
+                                        <CheckBox IsChecked="True" Name="checkHangSX" ToolTip="{Binding Path=TenHangSX}" VerticalAlignment="Center" Margin="4" Foreground="LimeGreen" Tag="{Binding Path=MaHangSX}" >
+                                            <WrapPanel >
+                                                <Image Margin="0,-5,0,0" Width="80" Height="30" Source="{Binding Path=Logo}"></Image>
+                                                <TextBlock   TextAlignment="Center" Text="{Binding Path=TenHangSX}"></TextBlock>
+                                            </WrapPanel>
+                                        </CheckBox>
+                                    </DataTemplate>
+                                </ListView.ItemTemplate>
+                            </ListView>
+                            <Button Background="Cyan" Click="btnLocDSHSX_Click" Name="btnLocDSHSX" Height="auto" Width="auto">
+                                <TextBlock FontWeight="Bold" Foreground="DarkBlue" TextAlignment="Center" HorizontalAlignment="Left" VerticalAlignment="Center" Text="Lọc Danh Sách"></TextBlock>
+                            </Button>
+                        </StackPanel>
+                    </Expander>
+                </StackPanel>
+            </Border>
+        </ScrollViewer>
+
+        <ListBox Name="lst" ItemsSource="{Binding}" HorizontalContentAlignment="Stretch" ItemTemplate="{StaticResource ProductDT}" Margin="0,0,1,0">
+
+            <ListBox.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <UniformGrid Columns="3"/>
+                </ItemsPanelTemplate>
+            </ListBox.ItemsPanel>
+            <ListBox.GroupStyle>
+                <GroupStyle>
+                    <GroupStyle.HeaderTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Path=Name}" FontWeight="Bold" Foreground="White" Background="LightGreen" Margin="0,5,0,0" Padding="3"/>
+                        </DataTemplate>
+                    </GroupStyle.HeaderTemplate>
+                </GroupStyle>
+            </ListBox.GroupStyle>
+            <!--<ListBox.GroupStyle>
+                <GroupStyle>
+                    <GroupStyle.HeaderTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Path=ProName}" FontWeight="Bold" Foreground="White" Background="LawnGreen" Margin="0,5,0,0"></TextBlock>
+                        </DataTemplate>
+                    </GroupStyle.HeaderTemplate>
+                </GroupStyle>
+                </ListBox.GroupStyle>-->
+        </ListBox>
+        <Grid Grid.Row="1" Grid.ColumnSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <WrapPanel MinWidth="200"  HorizontalAlignment="Center" VerticalAlignment="Top" Margin="10,-23,10,0" Width="430" >
+                <StackPanel MinWidth="200" Width="373" Height="78" >
+                    <WrapPanel Visibility="Hidden" HorizontalAlignment="Center" >
+                        <TextBlock FontWeight="Bold"  FontSize="20" Foreground="Navy" Height="30"><Run Text="Trang"/></TextBlock>
+                        <TextBox BorderBrush="BlueViolet" BorderThickness="1" Foreground="DarkBlue" FontWeight="Bold" FontSize="15" Background="Transparent" TextAlignment="Center" x:Name="btnInPage" KeyDown="btnInPage_KeyDown" Text="{Binding CurPage, Source={StaticResource dbForWd}}" Margin="5,0,3,0" Width="25" Height="22"/>
+                        <Border Panel.ZIndex="-1"  BorderBrush="Red"  BorderThickness="10" RenderTransformOrigin="0.5,0.5" Height="34" Width="1" >
+                            <Border.RenderTransform>
+                                <TransformGroup>
+                                    <ScaleTransform/>
+                                    <SkewTransform/>
+                                    <RotateTransform Angle="11.829"/>
+                                    <TranslateTransform/>
+                                </TransformGroup>
+                            </Border.RenderTransform>
+                        </Border>
+                        <TextBox x:Name="txtTotal" Foreground="DarkGreen" FontWeight="Bold"  FontSize="15" Background="Transparent" BorderThickness="0" IsReadOnly="True" Text="{Binding TotalPage, Source={StaticResource dbForWd}}" Margin="0,0,0,0" Width="12" Height="20"/>
+                    </WrapPanel>
+
+                    <WrapPanel  Margin="0,10,0,50" VerticalAlignment="Center" HorizontalAlignment="Center">
+                        <Button x:Name="btnPrev" Click="btnPrev_Click" Height="30" Width="30" Content="Prev" Margin="0,0,3,0"/>
+                        <ListView BorderThickness="0" ScrollViewer.VerticalScrollBarVisibility="Disabled" ItemsSource="{Binding}" IsSynchronizedWithCurrentItem="True"  x:Name="ListButton"  Background="Transparent">
+                            <ListView.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                    <WrapPanel MaxWidth="400"/>
+                                </ItemsPanelTemplate>
+                            </ListView.ItemsPanel>
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <Button VerticalAlignment="Center" HorizontalAlignment="Center" x:Name="btnNumber" Click="btnNumber_Click" Content="{Binding I}" Margin="0,0,3,0" Height="25" Width="25"/>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                        <Button x:Name="btnNext" Click="btnNext_Click" Height="30" Width="30"  Content="Next"/>
+                    </WrapPanel>
+                </StackPanel>
+            </WrapPanel>
+
+            <WrapPanel Grid.Column="1">
+                <Button Margin="5" Name="btnSort" Click="btnSort_Click">Sort Price</Button>
+                <Button Margin="5" Name="btnGroup" Click="btnGroup_Click">Group</Button>
+            </WrapPanel>
+        </Grid>
+    </Grid>
+</UserControl>

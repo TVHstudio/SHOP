@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ShopModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="DonHang">
+    <Key>
+      <PropertyRef Name="STT" />
+    </Key>
+    <Property Name="STT" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MaDonHang" Type="Int32" />
+    <Property Name="MaSP" Type="Int32" />
+    <Property Name="TenSP" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SoLuong" Type="Int32" />
+    <Property Name="NgayLap" Type="DateTime" Precision="3" />
+    <Property Name="GiaBan" Type="Int32" />
+    <Property Name="TongTien" Type="Int32" />
+    <Property Name="MaKH" Type="Int32" />
+  </EntityType>
+  <EntityType Name="HangSX">
+    <Key>
+      <PropertyRef Name="MaHangSX" />
+    </Key>
+    <Property Name="MaHangSX" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TenHangSX" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="loaisanpham">
+    <Key>
+      <PropertyRef Name="MaLoaiSP" />
+    </Key>
+    <Property Name="MaLoaiSP" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TenLoaiSP" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="sanpham">
+    <Key>
+      <PropertyRef Name="MaSP" />
+    </Key>
+    <Property Name="MaSP" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TenSP" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="GiaSP" Type="Int32" />
+    <Property Name="Hinh" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="SoLuotXem" Type="Int32" />
+    <Property Name="SoLuongBan" Type="Int32" />
+    <Property Name="SoLuongTon" Type="Int32" />
+    <Property Name="TinhTrang" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="NgayNhap" Type="DateTime" Precision="3" />
+    <Property Name="MoTa" Type="String" MaxLength="600" FixedLength="false" Unicode="true" />
+    <Property Name="ChiTiet" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="XuatXu" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="MaLoaiSP" Type="Int32" />
+    <Property Name="MaHangSX" Type="Int32" />
+  </EntityType>
+  <EntityType Name="taikhoan">
+    <Key>
+      <PropertyRef Name="MaTK" />
+    </Key>
+    <Property Name="MaTK" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TenDN" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="MatKhau" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="HoTen" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SDT" Type="Int32" />
+    <Property Name="Email" Type="String" MaxLength="256" FixedLength="false" Unicode="false" />
+    <Property Name="DOB" Type="String" MaxLength="11" FixedLength="false" Unicode="false" />
+    <Property Name="MaLoaiTK" Type="Int32" />
+    <Property Name="Hinh" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="DiaChi" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="ShopEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="DonHang" EntityType="Self.DonHang" />
+    <EntitySet Name="HangSX" EntityType="Self.HangSX" />
+    <EntitySet Name="loaisanpham" EntityType="Self.loaisanpham" />
+    <EntitySet Name="sanpham" EntityType="Self.sanpham" />
+    <EntitySet Name="taikhoan" EntityType="Self.taikhoan" />
+    <EntitySet Name="DONDATHANG" EntityType="ShopModel.DONDATHANG" />
+    <EntitySet Name="DonHang1" EntityType="ShopModel.DonHang1" />
+  </EntityContainer>
+  <EntityType Name="DONDATHANG">
+    <Key>
+      <PropertyRef Name="STT" />
+    </Key>
+    <Property Name="STT" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MaKH" Type="Int32" />
+    <Property Name="NgayDat" Type="DateTime" Precision="3" />
+    <Property Name="TinhTrangGiao" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="DaThanhToan" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="TongTien" Type="Int32" />
+    <Property Name="TongSoLuong" Type="Int32" />
+  </EntityType>
+  <EntityType Name="DonHang1">
+    <Key>
+      <PropertyRef Name="STT" />
+    </Key>
+    <Property Name="STT" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MaDonHang" Type="Int32" />
+    <Property Name="MaKH" Type="Int32" />
+    <Property Name="MaSP" Type="Int32" />
+    <Property Name="TenSP" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SoLuong" Type="Int32" />
+    <Property Name="NgayLap" Type="DateTime" Precision="3" />
+    <Property Name="GiaBan" Type="Int32" />
+    <Property Name="TongTien" Type="Int32" />
+  </EntityType>
+</Schema>

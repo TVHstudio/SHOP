@@ -1,0 +1,166 @@
+E:\khoa học tự nhiên\LTUDQL2\WPF_DOAN\SHOP\SHOP\bin\Debug\SHOP.exe.config
+E:\khoa học tự nhiên\LTUDQL2\WPF_DOAN\SHOP\SHOP\bin\Debug\SHOP.exe
+E:\khoa học tự nhiên\LTUDQL2\WPF_DOAN\SHOP\SHOP\bin\Debug\SHOP.pdb
+E:\khoa học tự nhiên\LTUDQL2\WPF_DOAN\SHOP\SHOP\bin\Debug\EntityFramework.dll
+E:\khoa học tự nhiên\LTUDQL2\WPF_DOAN\SHOP\SHOP\bin\Debug\EntityFramework.SqlServer.dll
+E:\khoa học tự nhiên\LTUDQL2\WPF_DOAN\SHOP\SHOP\bin\Debug\EntityFramework.xml
+E:\khoa học tự nhiên\LTUDQL2\WPF_DOAN\SHOP\SHOP\bin\Debug\EntityFramework.SqlServer.xml
+E:\khoa học tự nhiên\LTUDQL2\WPF_DOAN\SHOP\SHOP\obj\Debug\SHOP.csproj.ResolveComReference.cache
+E:\khoa học tự nhiên\LTUDQL2\WPF_DOAN\SHOP\SHOP\obj\Debug\GUI\AD.g.cs
+E:\khoa học tự nhiên\LTUDQL2\WPF_DOAN\SHOP\SHOP\obj\Debug\GUI\Chitiet.g.cs
+E:\khoa học tự nhiên\LTUDQL2\WPF_DOAN\SHOP\SHOP\obj\Debug\GUI\ChiTietSanPham.g.cs
+E:\khoa học tự nhiên\LTUDQL2\WPF_DOAN\SHOP\SHOP\obj\Debug\GUI\countDH.g.cs
+E:\khoa học tự nhiên\LTUDQL2\WPF_DOAN\SHOP\SHOP\obj\Debug\GUI\DagNhap.g.cs
+E:\khoa học tự nhiên\LTUDQL2\WPF_DOAN\SHOP\SHOP\obj\Debug\GUI\DangKy.g.cs
+E:\khoa học tự nhiên\LTUDQL2\WPF_DOAN\SHOP\SHOP\obj\Debug\GUI\DUYETDH.g.cs
+E:\khoa học tự nhiên\LTUDQL2\WPF_DOAN\SHOP\SHOP\obj\Debug\GUI\NumericBox.g.cs
+E:\khoa học tự nhiên\LTUDQL2\WPF_DOAN\SHOP\SHOP\obj\Debug\GUI\QLDonHang.g.cs
+E:\khoa học tự nhiên\LTUDQL2\WPF_DOAN\SHOP\SHOP\obj\Debug\GUI\QLHang.g.cs
+E:\khoa học tự nhiên\LTUDQL2\WPF_DOAN\SHOP\SHOP\obj\Debug\GUI\QLLoai.g.cs
+E:\khoa học tự nhiên\LTUDQL2\WPF_DOAN\SHOP\SHOP\obj\Debug\GUI\QLNguoiDung.g.cs
+E:\khoa học tự nhiên\LTUDQL2\WPF_DOAN\SHOP\SHOP\obj\Debug\GUI\QLSanPham.g.cs
+E:\khoa học tự nhiên\LTUDQL2\WPF_DOAN\SHOP\SHOP\obj\Debug\GUI\SPBanChay.g.cs
+E:\khoa học tự nhiên\LTUDQL2\WPF_DOAN\SHOP\SHOP\obj\Debug\GUI\SPCungHang.g.cs
+E:\khoa học tự nhiên\LTUDQL2\WPF_DOAN\SHOP\SHOP\obj\Debug\GUI\SPCungLoai.g.cs
+E:\khoa học tự nhiên\LTUDQL2\WPF_DOAN\SHOP\SHOP\obj\Debug\GUI\SPMoiNhat.g.cs
+E:\khoa học tự nhiên\LTUDQL2\WPF_DOAN\SHOP\SHOP\obj\Debug\GUI\SPXemNN.g.cs
+E:\khoa học tự nhiên\LTUDQL2\WPF_DOAN\SHOP\SHOP\obj\Debug\GUI\DH.g.cs
+E:\khoa học tự nhiên\LTUDQL2\WPF_DOAN\SHOP\SHOP\obj\Debug\GUI\GioHang.g.cs
+E:\khoa học tự nhiên\LTUDQL2\WPF_DOAN\SHOP\SHOP\obj\Debug\GUI\SanPham.g.cs
+E:\khoa học tự nhiên\LTUDQL2\WPF_DOAN\SHOP\SHOP\obj\Debug\GUI\ThongKe.g.cs
+E:\khoa học tự nhiên\LTUDQL2\WPF_DOAN\SHOP\SHOP\obj\Debug\GUI\ThongTinCaNhan.g.cs
+E:\khoa học tự nhiên\LTUDQL2\WPF_DOAN\SHOP\SHOP\obj\Debug\GUI\ThemSanPham.g.cs
+E:\khoa học tự nhiên\LTUDQL2\WPF_DOAN\SHOP\SHOP\obj\Debug\GUI\TiemKiem.g.cs
+E:\khoa học tự nhiên\LTUDQL2\WPF_DOAN\SHOP\SHOP\obj\Debug\GUI\TrangChu.g.cs
+E:\khoa học tự nhiên\LTUDQL2\WPF_DOAN\SHOP\SHOP\obj\Debug\GUI\UpdateSanPham.g.cs
+E:\khoa học tự nhiên\LTUDQL2\WPF_DOAN\SHOP\SHOP\obj\Debug\GUI\DuyetDonHang.g.cs
+E:\khoa học tự nhiên\LTUDQL2\WPF_DOAN\SHOP\SHOP\obj\Debug\GUI\UpdateTTCN.g.cs
+E:\khoa học tự nhiên\LTUDQL2\WPF_DOAN\SHOP\SHOP\obj\Debug\MainWindow.g.cs
+E:\khoa học tự nhiên\LTUDQL2\WPF_DOAN\SHOP\SHOP\obj\Debug\App.g.cs
+E:\khoa học tự nhiên\LTUDQL2\WPF_DOAN\SHOP\SHOP\obj\Debug\SHOP_Content.g.cs
+E:\khoa học tự nhiên\LTUDQL2\WPF_DOAN\SHOP\SHOP\obj\Debug\GeneratedInternalTypeHelper.g.cs
+E:\khoa học tự nhiên\LTUDQL2\WPF_DOAN\SHOP\SHOP\obj\Debug\SHOP_MarkupCompile.cache
+E:\khoa học tự nhiên\LTUDQL2\WPF_DOAN\SHOP\SHOP\obj\Debug\SHOP_MarkupCompile.lref
+E:\khoa học tự nhiên\LTUDQL2\WPF_DOAN\SHOP\SHOP\obj\Debug\GUI\AD.baml
+E:\khoa học tự nhiên\LTUDQL2\WPF_DOAN\SHOP\SHOP\obj\Debug\GUI\Chitiet.baml
+E:\khoa học tự nhiên\LTUDQL2\WPF_DOAN\SHOP\SHOP\obj\Debug\GUI\ChiTietSanPham.baml
+E:\khoa học tự nhiên\LTUDQL2\WPF_DOAN\SHOP\SHOP\obj\Debug\GUI\countDH.baml
+E:\khoa học tự nhiên\LTUDQL2\WPF_DOAN\SHOP\SHOP\obj\Debug\GUI\DagNhap.baml
+E:\khoa học tự nhiên\LTUDQL2\WPF_DOAN\SHOP\SHOP\obj\Debug\GUI\DangKy.baml
+E:\khoa học tự nhiên\LTUDQL2\WPF_DOAN\SHOP\SHOP\obj\Debug\GUI\DUYETDH.baml
+E:\khoa học tự nhiên\LTUDQL2\WPF_DOAN\SHOP\SHOP\obj\Debug\GUI\NumericBox.baml
+E:\khoa học tự nhiên\LTUDQL2\WPF_DOAN\SHOP\SHOP\obj\Debug\GUI\QLDonHang.baml
+E:\khoa học tự nhiên\LTUDQL2\WPF_DOAN\SHOP\SHOP\obj\Debug\GUI\QLHang.baml
+E:\khoa học tự nhiên\LTUDQL2\WPF_DOAN\SHOP\SHOP\obj\Debug\GUI\QLLoai.baml
+E:\khoa học tự nhiên\LTUDQL2\WPF_DOAN\SHOP\SHOP\obj\Debug\GUI\QLNguoiDung.baml
+E:\khoa học tự nhiên\LTUDQL2\WPF_DOAN\SHOP\SHOP\obj\Debug\GUI\QLSanPham.baml
+E:\khoa học tự nhiên\LTUDQL2\WPF_DOAN\SHOP\SHOP\obj\Debug\GUI\SPBanChay.baml
+E:\khoa học tự nhiên\LTUDQL2\WPF_DOAN\SHOP\SHOP\obj\Debug\GUI\SPCungHang.baml
+E:\khoa học tự nhiên\LTUDQL2\WPF_DOAN\SHOP\SHOP\obj\Debug\GUI\SPCungLoai.baml
+E:\khoa học tự nhiên\LTUDQL2\WPF_DOAN\SHOP\SHOP\obj\Debug\GUI\SPMoiNhat.baml
+E:\khoa học tự nhiên\LTUDQL2\WPF_DOAN\SHOP\SHOP\obj\Debug\GUI\SPXemNN.baml
+E:\khoa học tự nhiên\LTUDQL2\WPF_DOAN\SHOP\SHOP\obj\Debug\GUI\DH.baml
+E:\khoa học tự nhiên\LTUDQL2\WPF_DOAN\SHOP\SHOP\obj\Debug\GUI\GioHang.baml
+E:\khoa học tự nhiên\LTUDQL2\WPF_DOAN\SHOP\SHOP\obj\Debug\GUI\ResourceDictionary.baml
+E:\khoa học tự nhiên\LTUDQL2\WPF_DOAN\SHOP\SHOP\obj\Debug\GUI\SanPham.baml
+E:\khoa học tự nhiên\LTUDQL2\WPF_DOAN\SHOP\SHOP\obj\Debug\GUI\ThongKe.baml
+E:\khoa học tự nhiên\LTUDQL2\WPF_DOAN\SHOP\SHOP\obj\Debug\GUI\ThongTinCaNhan.baml
+E:\khoa học tự nhiên\LTUDQL2\WPF_DOAN\SHOP\SHOP\obj\Debug\GUI\ThemSanPham.baml
+E:\khoa học tự nhiên\LTUDQL2\WPF_DOAN\SHOP\SHOP\obj\Debug\GUI\TiemKiem.baml
+E:\khoa học tự nhiên\LTUDQL2\WPF_DOAN\SHOP\SHOP\obj\Debug\GUI\TrangChu.baml
+E:\khoa học tự nhiên\LTUDQL2\WPF_DOAN\SHOP\SHOP\obj\Debug\GUI\UpdateSanPham.baml
+E:\khoa học tự nhiên\LTUDQL2\WPF_DOAN\SHOP\SHOP\obj\Debug\GUI\DuyetDonHang.baml
+E:\khoa học tự nhiên\LTUDQL2\WPF_DOAN\SHOP\SHOP\obj\Debug\GUI\UpdateTTCN.baml
+E:\khoa học tự nhiên\LTUDQL2\WPF_DOAN\SHOP\SHOP\obj\Debug\MainWindow.baml
+E:\khoa học tự nhiên\LTUDQL2\WPF_DOAN\SHOP\SHOP\obj\Debug\SHOP.g.resources
+E:\khoa học tự nhiên\LTUDQL2\WPF_DOAN\SHOP\SHOP\obj\Debug\SHOP.Properties.Resources.resources
+E:\khoa học tự nhiên\LTUDQL2\WPF_DOAN\SHOP\SHOP\obj\Debug\SHOP.csproj.GenerateResource.Cache
+E:\khoa học tự nhiên\LTUDQL2\WPF_DOAN\SHOP\SHOP\obj\Debug\SHOP.exe
+E:\khoa học tự nhiên\LTUDQL2\WPF_DOAN\SHOP\SHOP\obj\Debug\SHOP.pdb
+E:\khoa học tự nhiên\LTUDQL2\WPF_DOAN\SHOP\SHOP\obj\Debug\SHOP.csprojResolveAssemblyReference.cache
+E:\khoa học tự nhiên\LTUDQL2\WPF_DOAN\SHOP\SHOP\obj\Debug\GUI\LSNguoiDung.g.cs
+E:\khoa học tự nhiên\LTUDQL2\WPF_DOAN\SHOP\SHOP\obj\Debug\GUI\LSNguoiDung.baml
+D:\FINAL\LTUDQL2\DOAN\2\LTUDQL2-master\SHOP_WPF\SHOP\bin\Debug\SHOP.exe.config
+D:\FINAL\LTUDQL2\DOAN\2\LTUDQL2-master\SHOP_WPF\SHOP\bin\Debug\SHOP.exe
+D:\FINAL\LTUDQL2\DOAN\2\LTUDQL2-master\SHOP_WPF\SHOP\bin\Debug\SHOP.pdb
+D:\FINAL\LTUDQL2\DOAN\2\LTUDQL2-master\SHOP_WPF\SHOP\bin\Debug\EntityFramework.dll
+D:\FINAL\LTUDQL2\DOAN\2\LTUDQL2-master\SHOP_WPF\SHOP\bin\Debug\EntityFramework.SqlServer.dll
+D:\FINAL\LTUDQL2\DOAN\2\LTUDQL2-master\SHOP_WPF\SHOP\bin\Debug\EntityFramework.xml
+D:\FINAL\LTUDQL2\DOAN\2\LTUDQL2-master\SHOP_WPF\SHOP\bin\Debug\EntityFramework.SqlServer.xml
+D:\FINAL\LTUDQL2\DOAN\2\LTUDQL2-master\SHOP_WPF\SHOP\obj\Debug\SHOP.csproj.AssemblyReference.cache
+D:\FINAL\LTUDQL2\DOAN\2\LTUDQL2-master\SHOP_WPF\SHOP\obj\Debug\SHOP.csproj.ResolveComReference.cache
+D:\FINAL\LTUDQL2\DOAN\2\LTUDQL2-master\SHOP_WPF\SHOP\obj\Debug\GUI\AD.g.cs
+D:\FINAL\LTUDQL2\DOAN\2\LTUDQL2-master\SHOP_WPF\SHOP\obj\Debug\GUI\Chitiet.g.cs
+D:\FINAL\LTUDQL2\DOAN\2\LTUDQL2-master\SHOP_WPF\SHOP\obj\Debug\GUI\ChiTietSanPham.g.cs
+D:\FINAL\LTUDQL2\DOAN\2\LTUDQL2-master\SHOP_WPF\SHOP\obj\Debug\GUI\countDH.g.cs
+D:\FINAL\LTUDQL2\DOAN\2\LTUDQL2-master\SHOP_WPF\SHOP\obj\Debug\GUI\DagNhap.g.cs
+D:\FINAL\LTUDQL2\DOAN\2\LTUDQL2-master\SHOP_WPF\SHOP\obj\Debug\GUI\DangKy.g.cs
+D:\FINAL\LTUDQL2\DOAN\2\LTUDQL2-master\SHOP_WPF\SHOP\obj\Debug\GUI\DUYETDH.g.cs
+D:\FINAL\LTUDQL2\DOAN\2\LTUDQL2-master\SHOP_WPF\SHOP\obj\Debug\GUI\LSNguoiDung.g.cs
+D:\FINAL\LTUDQL2\DOAN\2\LTUDQL2-master\SHOP_WPF\SHOP\obj\Debug\GUI\NumericBox.g.cs
+D:\FINAL\LTUDQL2\DOAN\2\LTUDQL2-master\SHOP_WPF\SHOP\obj\Debug\GUI\QLDonHang.g.cs
+D:\FINAL\LTUDQL2\DOAN\2\LTUDQL2-master\SHOP_WPF\SHOP\obj\Debug\GUI\QLHang.g.cs
+D:\FINAL\LTUDQL2\DOAN\2\LTUDQL2-master\SHOP_WPF\SHOP\obj\Debug\GUI\QLLoai.g.cs
+D:\FINAL\LTUDQL2\DOAN\2\LTUDQL2-master\SHOP_WPF\SHOP\obj\Debug\GUI\QLNguoiDung.g.cs
+D:\FINAL\LTUDQL2\DOAN\2\LTUDQL2-master\SHOP_WPF\SHOP\obj\Debug\GUI\QLSanPham.g.cs
+D:\FINAL\LTUDQL2\DOAN\2\LTUDQL2-master\SHOP_WPF\SHOP\obj\Debug\GUI\SPBanChay.g.cs
+D:\FINAL\LTUDQL2\DOAN\2\LTUDQL2-master\SHOP_WPF\SHOP\obj\Debug\GUI\SPCungHang.g.cs
+D:\FINAL\LTUDQL2\DOAN\2\LTUDQL2-master\SHOP_WPF\SHOP\obj\Debug\GUI\SPCungLoai.g.cs
+D:\FINAL\LTUDQL2\DOAN\2\LTUDQL2-master\SHOP_WPF\SHOP\obj\Debug\GUI\SPMoiNhat.g.cs
+D:\FINAL\LTUDQL2\DOAN\2\LTUDQL2-master\SHOP_WPF\SHOP\obj\Debug\GUI\SPXemNN.g.cs
+D:\FINAL\LTUDQL2\DOAN\2\LTUDQL2-master\SHOP_WPF\SHOP\obj\Debug\GUI\DH.g.cs
+D:\FINAL\LTUDQL2\DOAN\2\LTUDQL2-master\SHOP_WPF\SHOP\obj\Debug\GUI\GioHang.g.cs
+D:\FINAL\LTUDQL2\DOAN\2\LTUDQL2-master\SHOP_WPF\SHOP\obj\Debug\GUI\SanPham.g.cs
+D:\FINAL\LTUDQL2\DOAN\2\LTUDQL2-master\SHOP_WPF\SHOP\obj\Debug\GUI\ThongKe.g.cs
+D:\FINAL\LTUDQL2\DOAN\2\LTUDQL2-master\SHOP_WPF\SHOP\obj\Debug\GUI\ThongTinCaNhan.g.cs
+D:\FINAL\LTUDQL2\DOAN\2\LTUDQL2-master\SHOP_WPF\SHOP\obj\Debug\GUI\ThemSanPham.g.cs
+D:\FINAL\LTUDQL2\DOAN\2\LTUDQL2-master\SHOP_WPF\SHOP\obj\Debug\GUI\TiemKiem.g.cs
+D:\FINAL\LTUDQL2\DOAN\2\LTUDQL2-master\SHOP_WPF\SHOP\obj\Debug\GUI\TrangChu.g.cs
+D:\FINAL\LTUDQL2\DOAN\2\LTUDQL2-master\SHOP_WPF\SHOP\obj\Debug\GUI\UpdateSanPham.g.cs
+D:\FINAL\LTUDQL2\DOAN\2\LTUDQL2-master\SHOP_WPF\SHOP\obj\Debug\GUI\DuyetDonHang.g.cs
+D:\FINAL\LTUDQL2\DOAN\2\LTUDQL2-master\SHOP_WPF\SHOP\obj\Debug\GUI\UpdateTTCN.g.cs
+D:\FINAL\LTUDQL2\DOAN\2\LTUDQL2-master\SHOP_WPF\SHOP\obj\Debug\MainWindow.g.cs
+D:\FINAL\LTUDQL2\DOAN\2\LTUDQL2-master\SHOP_WPF\SHOP\obj\Debug\App.g.cs
+D:\FINAL\LTUDQL2\DOAN\2\LTUDQL2-master\SHOP_WPF\SHOP\obj\Debug\SHOP_Content.g.cs
+D:\FINAL\LTUDQL2\DOAN\2\LTUDQL2-master\SHOP_WPF\SHOP\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\FINAL\LTUDQL2\DOAN\2\LTUDQL2-master\SHOP_WPF\SHOP\obj\Debug\SHOP_MarkupCompile.cache
+D:\FINAL\LTUDQL2\DOAN\2\LTUDQL2-master\SHOP_WPF\SHOP\obj\Debug\SHOP_MarkupCompile.lref
+D:\FINAL\LTUDQL2\DOAN\2\LTUDQL2-master\SHOP_WPF\SHOP\obj\Debug\GUI\AD.baml
+D:\FINAL\LTUDQL2\DOAN\2\LTUDQL2-master\SHOP_WPF\SHOP\obj\Debug\GUI\Chitiet.baml
+D:\FINAL\LTUDQL2\DOAN\2\LTUDQL2-master\SHOP_WPF\SHOP\obj\Debug\GUI\ChiTietSanPham.baml
+D:\FINAL\LTUDQL2\DOAN\2\LTUDQL2-master\SHOP_WPF\SHOP\obj\Debug\GUI\countDH.baml
+D:\FINAL\LTUDQL2\DOAN\2\LTUDQL2-master\SHOP_WPF\SHOP\obj\Debug\GUI\DagNhap.baml
+D:\FINAL\LTUDQL2\DOAN\2\LTUDQL2-master\SHOP_WPF\SHOP\obj\Debug\GUI\DangKy.baml
+D:\FINAL\LTUDQL2\DOAN\2\LTUDQL2-master\SHOP_WPF\SHOP\obj\Debug\GUI\DUYETDH.baml
+D:\FINAL\LTUDQL2\DOAN\2\LTUDQL2-master\SHOP_WPF\SHOP\obj\Debug\GUI\LSNguoiDung.baml
+D:\FINAL\LTUDQL2\DOAN\2\LTUDQL2-master\SHOP_WPF\SHOP\obj\Debug\GUI\NumericBox.baml
+D:\FINAL\LTUDQL2\DOAN\2\LTUDQL2-master\SHOP_WPF\SHOP\obj\Debug\GUI\QLDonHang.baml
+D:\FINAL\LTUDQL2\DOAN\2\LTUDQL2-master\SHOP_WPF\SHOP\obj\Debug\GUI\QLHang.baml
+D:\FINAL\LTUDQL2\DOAN\2\LTUDQL2-master\SHOP_WPF\SHOP\obj\Debug\GUI\QLLoai.baml
+D:\FINAL\LTUDQL2\DOAN\2\LTUDQL2-master\SHOP_WPF\SHOP\obj\Debug\GUI\QLNguoiDung.baml
+D:\FINAL\LTUDQL2\DOAN\2\LTUDQL2-master\SHOP_WPF\SHOP\obj\Debug\GUI\QLSanPham.baml
+D:\FINAL\LTUDQL2\DOAN\2\LTUDQL2-master\SHOP_WPF\SHOP\obj\Debug\GUI\SPBanChay.baml
+D:\FINAL\LTUDQL2\DOAN\2\LTUDQL2-master\SHOP_WPF\SHOP\obj\Debug\GUI\SPCungHang.baml
+D:\FINAL\LTUDQL2\DOAN\2\LTUDQL2-master\SHOP_WPF\SHOP\obj\Debug\GUI\SPCungLoai.baml
+D:\FINAL\LTUDQL2\DOAN\2\LTUDQL2-master\SHOP_WPF\SHOP\obj\Debug\GUI\SPMoiNhat.baml
+D:\FINAL\LTUDQL2\DOAN\2\LTUDQL2-master\SHOP_WPF\SHOP\obj\Debug\GUI\SPXemNN.baml
+D:\FINAL\LTUDQL2\DOAN\2\LTUDQL2-master\SHOP_WPF\SHOP\obj\Debug\GUI\DH.baml
+D:\FINAL\LTUDQL2\DOAN\2\LTUDQL2-master\SHOP_WPF\SHOP\obj\Debug\GUI\GioHang.baml
+D:\FINAL\LTUDQL2\DOAN\2\LTUDQL2-master\SHOP_WPF\SHOP\obj\Debug\GUI\ResourceDictionary.baml
+D:\FINAL\LTUDQL2\DOAN\2\LTUDQL2-master\SHOP_WPF\SHOP\obj\Debug\GUI\SanPham.baml
+D:\FINAL\LTUDQL2\DOAN\2\LTUDQL2-master\SHOP_WPF\SHOP\obj\Debug\GUI\ThongKe.baml
+D:\FINAL\LTUDQL2\DOAN\2\LTUDQL2-master\SHOP_WPF\SHOP\obj\Debug\GUI\ThongTinCaNhan.baml
+D:\FINAL\LTUDQL2\DOAN\2\LTUDQL2-master\SHOP_WPF\SHOP\obj\Debug\GUI\ThemSanPham.baml
+D:\FINAL\LTUDQL2\DOAN\2\LTUDQL2-master\SHOP_WPF\SHOP\obj\Debug\GUI\TiemKiem.baml
+D:\FINAL\LTUDQL2\DOAN\2\LTUDQL2-master\SHOP_WPF\SHOP\obj\Debug\GUI\TrangChu.baml
+D:\FINAL\LTUDQL2\DOAN\2\LTUDQL2-master\SHOP_WPF\SHOP\obj\Debug\GUI\UpdateSanPham.baml
+D:\FINAL\LTUDQL2\DOAN\2\LTUDQL2-master\SHOP_WPF\SHOP\obj\Debug\GUI\DuyetDonHang.baml
+D:\FINAL\LTUDQL2\DOAN\2\LTUDQL2-master\SHOP_WPF\SHOP\obj\Debug\GUI\UpdateTTCN.baml
+D:\FINAL\LTUDQL2\DOAN\2\LTUDQL2-master\SHOP_WPF\SHOP\obj\Debug\MainWindow.baml
+D:\FINAL\LTUDQL2\DOAN\2\LTUDQL2-master\SHOP_WPF\SHOP\obj\Debug\SHOP.g.resources
+D:\FINAL\LTUDQL2\DOAN\2\LTUDQL2-master\SHOP_WPF\SHOP\obj\Debug\SHOP.Properties.Resources.resources
+D:\FINAL\LTUDQL2\DOAN\2\LTUDQL2-master\SHOP_WPF\SHOP\obj\Debug\SHOP.csproj.GenerateResource.cache
+D:\FINAL\LTUDQL2\DOAN\2\LTUDQL2-master\SHOP_WPF\SHOP\obj\Debug\SHOP.csproj.CoreCompileInputs.cache
+D:\FINAL\LTUDQL2\DOAN\2\LTUDQL2-master\SHOP_WPF\SHOP\obj\Debug\SHOP.csproj.Up2Date
+D:\FINAL\LTUDQL2\DOAN\2\LTUDQL2-master\SHOP_WPF\SHOP\obj\Debug\SHOP.exe
+D:\FINAL\LTUDQL2\DOAN\2\LTUDQL2-master\SHOP_WPF\SHOP\obj\Debug\SHOP.pdb

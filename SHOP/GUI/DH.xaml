@@ -1,0 +1,128 @@
+﻿<Window x:Class="SHOP.GUI.DH"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+         xmlns:clr="clr-namespace:System;assembly=mscorlib"
+        xmlns:local="clr-namespace:SHOP.GUI"
+         WindowStyle="ToolWindow"
+        mc:Ignorable="d"
+        Title="DonHang" Height="450" Width="700">
+    <Window.Resources>
+        <Style  TargetType="{x:Type Label}">
+            <Style.Triggers>
+                <Trigger Property="ItemsControl.AlternationIndex" Value="0">
+                    <Setter Property="FontFamily" Value="Californian FB"></Setter>
+                </Trigger>
+                <Trigger Property="ItemsControl.AlternationIndex" Value="0">
+                    <Setter Property="FontSize" Value="15"></Setter>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+    </Window.Resources>
+   
+        <Grid Name="ok" Margin="5">
+            <Grid.Background>
+                <ImageBrush ImageSource="/SHOP;component/img/1.jpg" Opacity="0.3"/>
+            </Grid.Background>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="44*"/>
+                <RowDefinition Height="44*"/>
+                <RowDefinition Height="36*"/>
+                <RowDefinition Height="38*"/>
+                <RowDefinition Height="44*"/>
+                <RowDefinition Height="82*"/>
+                <RowDefinition Height="24*"/>
+                <RowDefinition Height="45*"/>
+                <RowDefinition Height="30"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="117*"/>
+                <ColumnDefinition Width="122*"/>
+                <ColumnDefinition Width="42"/>
+                <ColumnDefinition Width="107*"/>
+                <ColumnDefinition Width="61*"/>
+                <ColumnDefinition Width="100*"/>
+                <ColumnDefinition Width="41"/>
+                <ColumnDefinition Width="80"/>
+            </Grid.ColumnDefinitions>
+
+            <Border Grid.RowSpan="6" Grid.ColumnSpan="2" BorderBrush="Red" BorderThickness="1" Margin="0,10,0,0">
+                <Image x:Name="hinh" Source="E:\PHONE\PHONE\image\iphone7plus.jpg" Margin="10"></Image>
+                <!--Hình ảnh-->
+            </Border>
+
+            <!--<Label Content="Tên SP:" Grid.Column="3"/>-->
+            <!--textbox name-->
+            <TextBlock TextAlignment="Center" Foreground="Navy" FontSize="23" Name="txtname" Text="ten" Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="3" Margin="3,6"/>
+
+            <Label  Content="Giá :" Grid.Column="3" Grid.Row="2" Margin="6"/>
+            <TextBlock IsEnabled="False" FontSize="14" Foreground="Red" Name="txtgia" Grid.Column="4" Grid.Row="2" Margin="4"/>
+
+            <Label Content="Số Lượng:" Grid.Column="3" Grid.Row="3" Margin="6"/>
+            <!--<TextBox   Name="txtsl" Grid.Column="4" Grid.Row="3" Grid.ColumnSpan="1" Margin="6">
+                <TextBox.CaretBrush>
+                    <LinearGradientBrush StartPoint="0,0"
+                             EndPoint="0,1">
+                        <GradientStop Offset="0"
+                          Color="Red" />
+                        <GradientStop Offset="0.5"
+                          Color="Yellow" />
+                        <GradientStop Offset="1.0"
+                          Color="Blue" />
+                    </LinearGradientBrush>
+                </TextBox.CaretBrush>
+                <TextBox.SelectionBrush>
+                    <LinearGradientBrush StartPoint="0,0"
+                             EndPoint="1,0">
+                        <GradientStop Offset="0"
+                          Color="Red" />
+                        <GradientStop Offset="0.5"
+                          Color="Yellow" />
+                        <GradientStop Offset="1.0"
+                          Color="Blue" />
+                    </LinearGradientBrush>
+                </TextBox.SelectionBrush>
+            </TextBox>-->
+            <StackPanel  Grid.Column="4" Grid.Row="3" Grid.ColumnSpan="2">
+                <!--Đoạn sử lí updown-->
+                <local:NumericBox Margin="10,6,35,6" Minimum="1" Maximum="100" Height="32" x:Name="txtsl" Value="1" />
+            </StackPanel>
+            <TextBox Visibility="Hidden"  Margin="7,0,18,6" IsEnabled="False"  Name="txtid" Text="ten" Grid.Row="3" Grid.Column="7" />
+            <Label Content="  Mô tả:" Grid.Column="3" Grid.Row="4"/>
+            <TextBlock TextWrapping="Wrap" Margin="6,2,10,0" IsEnabled="False"  Name="txtmota" Text="ten" Grid.Row="4" Grid.Column="4" Grid.ColumnSpan="3" />
+            <Label Margin="6"  Grid.Column="3" Grid.Row="5" Content="Ngày lập:"></Label>
+            <DatePicker  BorderBrush="White"   Grid.Column="4" Grid.Row="5" Grid.ColumnSpan="2" Name="datepk" Margin="7"
+                                    DisplayDate="{x:Static clr:DateTime.Now}" 
+                                    SelectedDate="{x:Static clr:DateTime.Now}"
+           >
+                <DatePicker.Background>
+                    <ImageBrush ImageSource="/SHOP;component/img/1.jpg" Opacity="0.3"/>
+                </DatePicker.Background>
+            </DatePicker>
+            <Button BorderThickness="1"  Name="btnmua" Grid.Column="1" Grid.Row="7" Click="btnmua_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="/SHOP;component/img/1.jpg"></ImageBrush>
+                </Button.Background>
+                <Grid Height="45" Width="118">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="19*"/>
+                        <ColumnDefinition Width="40*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Image Grid.RowSpan="2"  HorizontalAlignment="Left" Source="/SHOP;component/img/Ba.png" Width="55" Height="52" Grid.ColumnSpan="2" Margin="-9,-5,0,0" />
+                    <TextBlock Foreground="Blue" Grid.RowSpan="2" FontSize="15"  FontFamily="Californian FB" TextAlignment="Center" Padding="0,10,0,0" Text="Thêm Vào Giỏ" Grid.ColumnSpan="2" Margin="29,2,0,-2"/>
+                </Grid>
+            </Button>
+            <Button Visibility="Hidden" Name="btbThoat" Grid.Column="3" Grid.Row="7" Click="btbThoat_Click" >
+                <Image   HorizontalAlignment="Left" Source="/SHOP;component/img/4287.jpg" Width="110" Height="60"  />
+            </Button>
+            <GroupBox BorderBrush="Brown" Grid.Column="2" Foreground="Navy" FontSize="22" FontFamily=".VnUniverse" Header="THÔNG TIN SẢN PHẨM" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top" Height="285" Grid.RowSpan="6" Grid.ColumnSpan="6" Width="343"/>
+            <TextBox Visibility="Hidden" Grid.Column="7" HorizontalAlignment="Left" Height="28" Margin="0,25,0,0" Grid.Row="5" TextWrapping="Wrap" Name="TempDH" VerticalAlignment="Top" Width="70"/>
+        </Grid>
+  
+</Window>

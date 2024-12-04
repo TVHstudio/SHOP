@@ -1,0 +1,627 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EC8121B6-0104-432D-8591-7B90D6FDD102}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SHOP</RootNamespace>
+    <AssemblyName>SHOP</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Controls.DataVisualization.Toolkit, Version=3.5.40128.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\MyPC\Documents\EGDownloads\ChartingSample\ChartingSample\ChartingSample\bin\Debug\System.Windows.Controls.DataVisualization.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="WPFToolkit, Version=3.5.40128.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\MyPC\Documents\EGDownloads\ChartingSample\ChartingSample\ChartingSample\bin\Debug\WPFToolkit.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="BUS\CatStatistic.cs" />
+    <Compile Include="BUS\Chart.cs" />
+    <Compile Include="BUS\CThongKe.cs" />
+    <Compile Include="BUS\giohangtemp.cs" />
+    <Compile Include="BUS\PageButton.cs" />
+    <Compile Include="BUS\Pages.cs" />
+    <Compile Include="DAL\DONDATHANG.cs">
+      <DependentUpon>QLBH.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\DonHang.cs">
+      <DependentUpon>QLBH.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\DonHang1.cs">
+      <DependentUpon>QLBH.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\HangSX.cs">
+      <DependentUpon>QLBH.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\loaisanpham.cs">
+      <DependentUpon>QLBH.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\QLBH.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLBH.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\QLBH.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLBH.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\QLBH.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLBH.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\sanpham.cs">
+      <DependentUpon>QLBH.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\taikhoan.cs">
+      <DependentUpon>QLBH.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FlowDocuments\Attached.cs" />
+    <Compile Include="FlowDocuments\BindableRun.cs" />
+    <Compile Include="FlowDocuments\BlockTemplateContent.cs" />
+    <Compile Include="FlowDocuments\Fragment.cs" />
+    <Compile Include="FlowDocuments\Helpers.cs" />
+    <Compile Include="FlowDocuments\ItemsContent.cs" />
+    <Compile Include="GUI\AD.xaml.cs">
+      <DependentUpon>AD.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ChiTietSanPham.xaml.cs">
+      <DependentUpon>ChiTietSanPham.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\countDH.xaml.cs">
+      <DependentUpon>countDH.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\DagNhap.xaml.cs">
+      <DependentUpon>DagNhap.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\DangKy.xaml.cs">
+      <DependentUpon>DangKy.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\DUYETDH.xaml.cs">
+      <DependentUpon>DUYETDH.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\LSNguoiDung.xaml.cs">
+      <DependentUpon>LSNguoiDung.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\NumericBox.xaml.cs">
+      <DependentUpon>NumericBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\QLDonHang.xaml.cs">
+      <DependentUpon>QLDonHang.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\QLHang.xaml.cs">
+      <DependentUpon>QLHang.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\QLLoai.xaml.cs">
+      <DependentUpon>QLLoai.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\QLNguoiDung.xaml.cs">
+      <DependentUpon>QLNguoiDung.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\QLSanPham.xaml.cs">
+      <DependentUpon>QLSanPham.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ThongKe.xaml.cs">
+      <DependentUpon>ThongKe.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ThongTinCaNhan.xaml.cs">
+      <DependentUpon>ThongTinCaNhan.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ThemSanPham.xaml.cs">
+      <DependentUpon>ThemSanPham.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\UpdateSanPham.xaml.cs">
+      <DependentUpon>UpdateSanPham.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\DuyetDonHang.xaml.cs">
+      <DependentUpon>DuyetDonHang.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\UpdateTTCN.xaml.cs">
+      <DependentUpon>UpdateTTCN.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Ultilities\AddHelpers.cs" />
+    <Compile Include="Ultilities\Commands.cs" />
+    <Compile Include="validtion.cs" />
+    <Page Include="GUI\AD.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GUI\Chitiet.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GUI\ChiTietSanPham.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GUI\countDH.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GUI\DagNhap.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GUI\DangKy.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GUI\DUYETDH.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GUI\LSNguoiDung.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GUI\NumericBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GUI\QLDonHang.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GUI\QLHang.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GUI\QLLoai.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GUI\QLNguoiDung.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GUI\QLSanPham.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GUI\SPBanChay.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GUI\SPCungHang.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GUI\SPCungLoai.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GUI\SPMoiNhat.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GUI\SPXemNN.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GUI\DH.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GUI\GioHang.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GUI\ResourceDictionary.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GUI\SanPham.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GUI\ThongKe.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GUI\ThongTinCaNhan.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GUI\ThemSanPham.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GUI\TiemKiem.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GUI\TrangChu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GUI\UpdateSanPham.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GUI\DuyetDonHang.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GUI\UpdateTTCN.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BUS\BTHome.cs" />
+    <Compile Include="BUS\DN.cs" />
+    <Compile Include="GUI\Chitiet.xaml.cs">
+      <DependentUpon>Chitiet.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\SPBanChay.xaml.cs">
+      <DependentUpon>SPBanChay.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\SPCungHang.xaml.cs">
+      <DependentUpon>SPCungHang.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\SPCungLoai.xaml.cs">
+      <DependentUpon>SPCungLoai.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\SPMoiNhat.xaml.cs">
+      <DependentUpon>SPMoiNhat.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\SPXemNN.xaml.cs">
+      <DependentUpon>SPXemNN.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\DH.xaml.cs">
+      <DependentUpon>DH.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\GioHang.xaml.cs">
+      <DependentUpon>GioHang.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\SanPham.xaml.cs">
+      <DependentUpon>SanPham.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\TiemKiem.xaml.cs">
+      <DependentUpon>TiemKiem.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\TrangChu.xaml.cs">
+      <DependentUpon>TrangChu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EntityDeploy Include="DAL\QLBH.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>QLBH.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="DAL\QLBH.edmx.diagram">
+      <DependentUpon>QLBH.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\home2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\home3.png" />
+    <Resource Include="img\icon-home.png" />
+    <Resource Include="img\timkiem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\sp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\nenmuc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\hot.gif" />
+    <Resource Include="img\hot2.gif" />
+    <Resource Include="img\hotline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\new.gif" />
+    <Resource Include="img\p1.png" />
+    <Resource Include="img\p2.png" />
+    <Resource Include="img\phone-icon.png" />
+    <Resource Include="img\phone.png" />
+    <Resource Include="img\sale.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\Tuvan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\gh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\group.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\35.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\nen.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\bay.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\traitimbay.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="img\kmm.png" />
+    <Resource Include="img\MT2.png" />
+    <Resource Include="img\giamgia2.png" />
+    <Resource Include="img\giamgia1.png" />
+    <Resource Include="img\Update.png" />
+    <Resource Include="img\mat.png" />
+    <Resource Include="img\dx.png" />
+    <Resource Include="img\tv.png" />
+    <Resource Include="img\yahoo2.png" />
+    <Resource Include="img\nguoid.png" />
+    <Resource Include="img\mm.png" />
+    <Resource Include="img\ng.png" />
+    <Resource Include="img\x.png" />
+    <Resource Include="img\AddTableHS.png" />
+    <Resource Include="img\DeleteFolderHS.png" />
+    <Resource Include="img\PrintArea.png" />
+    <Resource Include="img\SaveFormDesignHS.png" />
+    <Resource Include="img\StopHS.png" />
+    <Resource Include="img\4287.jpg" />
+    <Resource Include="img\Ba.png" />
+    <Resource Include="img\giohang.png" />
+    <Resource Include="img\buttonoder.png" />
+    <Resource Include="img\xem.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="imge\10\a.png" />
+    <Resource Include="imge\10\Canon EOS 700D.jpg" />
+    <Resource Include="imge\11\a.png" />
+    <Resource Include="imge\11\Canon EOS 70D.jpg" />
+    <Resource Include="imge\12\a.png" />
+    <Resource Include="imge\12\Sony SLT-A57K.jpg" />
+    <Resource Include="imge\13\a.png" />
+    <Resource Include="imge\13\Sony A77 Mark II.jpg" />
+    <Resource Include="imge\14\a.png" />
+    <Resource Include="imge\14\Nikon D7200.jpg" />
+    <Resource Include="imge\15\a.png" />
+    <Resource Include="imge\15\Nikon D750.jpg" />
+    <Resource Include="imge\16\a.png" />
+    <Resource Include="imge\16\KTS Fujifilm FinePix S9900W.jpg" />
+    <Resource Include="imge\17\a.png" />
+    <Resource Include="imge\17\Canon EOS 6D Wifi.jpg" />
+    <Resource Include="imge\18\a.png" />
+    <Resource Include="imge\18\Compact Fujifilm XF1.jpg" />
+    <Resource Include="imge\19\a.png" />
+    <Resource Include="imge\19\Olympus Stylus TG-4 Tough.jpg" />
+    <Resource Include="imge\1\a.png" />
+    <Resource Include="imge\1\Fujifilm X-A2.jpg" />
+    <Resource Include="imge\20\a.png" />
+    <Resource Include="imge\20\Olympus Stylus 1.jpg" />
+    <Resource Include="imge\21\a.png" />
+    <Resource Include="imge\21\Canon EOS M10.jpg" />
+    <Resource Include="imge\22\a.png" />
+    <Resource Include="imge\22\Panasonic DMC-LX100.jpg" />
+    <Resource Include="imge\23\a.png" />
+    <Resource Include="imge\23\KTS Panasonic lDMC-LX7 Lumix.jpg" />
+    <Resource Include="imge\24\a.png" />
+    <Resource Include="imge\24\KTS Olympus Tough TG-2.jpg" />
+    <Resource Include="imge\25\a.png" />
+    <Resource Include="imge\25\Fujifilm Instax Wide 300 %28Đen%29.jpg" />
+    <Resource Include="imge\26\a.png" />
+    <Resource Include="imge\26\Fujifilm Instax Mini 50s %28Đen%29.jpg" />
+    <Resource Include="imge\27\a.png" />
+    <Resource Include="imge\27\Fujifilm Instax mini 8.jpg" />
+    <Resource Include="imge\28\a.png" />
+    <Resource Include="imge\28\Mini DV Recorder.jpg" />
+    <Resource Include="imge\29\a.png" />
+    <Resource Include="imge\29\ASOCA002K.jpg" />
+    <Resource Include="imge\2\a.png" />
+    <Resource Include="imge\2\Fujifilm X-T10.jpg" />
+    <Resource Include="imge\30\a.png" />
+    <Resource Include="imge\30\Fujifilm Instax Mini 70.jpg" />
+    <Resource Include="imge\31\a.png" />
+    <Resource Include="imge\31\Canon PowerShot SX420 IS.jpg" />
+    <Resource Include="imge\32\a.png" />
+    <Resource Include="imge\32\KTS NiKonCoolpix L840.jpg" />
+    <Resource Include="imge\33\a.jpg" />
+    <Resource Include="imge\33\a.png" />
+    <Resource Include="imge\34\a.png" />
+    <Resource Include="imge\34\HD VIDEO RECORDER - PK19-234.jpg" />
+    <Resource Include="imge\35\a.png" />
+    <Resource Include="imge\35\Polaroid.jpg" />
+    <Resource Include="imge\36\a.png" />
+    <Resource Include="imge\36\KTS Webvision L29.jpg" />
+    <Resource Include="imge\37\a.png" />
+    <Resource Include="imge\37\SKT Canon Powershot G9X.jpg" />
+    <Resource Include="imge\38\a.png" />
+    <Resource Include="imge\38\Duble Screen HD.jpg" />
+    <Resource Include="imge\39\a.png" />
+    <Resource Include="imge\39\SONY DSC WX350 WCE32.jpg" />
+    <Resource Include="imge\3\a.png" />
+    <Resource Include="imge\3\Sony Alpha ILCE-6000L.jpg" />
+    <Resource Include="imge\40\a.png" />
+    <Resource Include="imge\40\PowerShot D30.jpg" />
+    <Resource Include="imge\4\a.png" />
+    <Resource Include="imge\4\mirrorless Canon EOS M3.jpg" />
+    <Resource Include="imge\5\a.png" />
+    <Resource Include="imge\5\Nikon 1 J2.jpg" />
+    <Resource Include="imge\6\a.png" />
+    <Resource Include="imge\6\Olympus PEN mini E-PM2.jpg" />
+    <Resource Include="imge\7\a.png" />
+    <Resource Include="imge\7\Olympus PEN E-PM2.jpg" />
+    <Resource Include="imge\8\a.png" />
+    <Resource Include="imge\8\Nikon J3.jpg" />
+    <Resource Include="imge\9\a.png" />
+    <Resource Include="imge\9\Panasonic Lumix DMC-GH4 body.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DAL\QLBH.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>QLBH.edmx</DependentUpon>
+      <LastGenOutput>QLBH.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="DAL\QLBH.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>QLBH.edmx</DependentUpon>
+      <LastGenOutput>QLBH.cs</LastGenOutput>
+    </Content>
+    <Resource Include="img\spma.png" />
+    <Resource Include="img\ma.png" />
+    <Resource Include="img\hma.png" />
+    <Resource Include="img\dh.png" />
+    <Resource Include="img\nenmayanh.png" />
+    <Resource Include="img\down.png" />
+    <Resource Include="img\up.png" />
+    <Resource Include="img\bd.png" />
+    <Resource Include="img\Arrow.png" />
+    <Resource Include="img\icongio.png" />
+    <Resource Include="img\pop.png" />
+    <Resource Include="img\mt.png" />
+    <Resource Include="img\yahoo.gif" />
+    <Resource Include="img\tt.png" />
+    <Resource Include="img\o.jpg" />
+    <Resource Include="img\khunghinh.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

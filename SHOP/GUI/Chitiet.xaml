@@ -1,0 +1,320 @@
+﻿<Window x:Class="SHOP.GUI.Chitiet"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SHOP.GUI"
+        WindowStartupLocation="CenterScreen"
+         WindowStyle="ToolWindow"
+        mc:Ignorable="d"
+        Height="700" Width="950">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush  ImageSource="/SHOP;component/img/1.jpg"></ImageBrush>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="65*"/>
+            <ColumnDefinition Width="119*"/>
+            <ColumnDefinition Width="207*"/>
+
+            <ColumnDefinition Width="35*"/>
+            <ColumnDefinition Width="86*"/>
+            <ColumnDefinition Width="211*"/>
+            <ColumnDefinition Width="19*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="66*"/>
+            <RowDefinition Height="15*"/>
+            <RowDefinition Height="76*"/>
+            <RowDefinition Height="147*"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="45*"/>
+            <RowDefinition Height="43*"/>
+            <RowDefinition Height="47*"/>
+            <RowDefinition Height="44*"/>
+            <RowDefinition Height="52*"/>
+            <RowDefinition Height="41*"/>
+            <RowDefinition Height="41*"/>
+            <RowDefinition Height="45*"/>
+            <RowDefinition Height="26*"/>
+            <RowDefinition Height="51*"/>
+        </Grid.RowDefinitions>
+
+
+        <Border Background="White" Grid.Row="1" Grid.ColumnSpan="3" Grid.RowSpan="6" BorderBrush="Red" BorderThickness="2" Margin="10,0,192,25">
+            <Image Name="imghinh" Source="E:\khoa học tự nhiên\LTUDQL2\WPF_DOAN\SHOP\SHOP\imge\17\a.png"></Image>
+        </Border>
+        <TextBlock TextAlignment="Center"  Foreground="DarkCyan" FontSize="25" HorizontalAlignment="Center" Name="tbTenSP" Text="ten" Grid.Row="1" Width="338" Grid.ColumnSpan="3" Margin="78,10,0,30" Grid.Column="2" Grid.RowSpan="2"/>
+        <TextBlock FontSize="15" Foreground="Purple" Text="Giá Bán :" Grid.Column="2" Grid.Row="2" Margin="79,50,122,106" Grid.RowSpan="2"/>
+        <TextBlock Foreground="Red" FontSize="15"  Name="tbGia"  Grid.Column="2" Grid.Row="2" DataContextChanged="tbGia_DataContextChanged" Grid.ColumnSpan="4" Margin="183,36,267,120" Grid.RowSpan="2"/>
+        <TextBlock FontSize="15"  Text="Số Lượt Xem:" Foreground="Purple" Grid.Column="2" Grid.Row="3" Margin="78,22,95,74"/>
+        <TextBlock FontSize="15"  Name="tbSLX" Text="soluotxem" Grid.Column="2" Grid.Row="3" Grid.ColumnSpan="4" Margin="183,18,238,77"/>
+        <TextBlock FontSize="15"  Foreground="Purple" Text="Số Lượt Bán :" Grid.Column="2" Grid.Row="3" Margin="79,54,95,36"/>
+        <TextBlock FontSize="15"  Name="tbSLB" Text="slb" Grid.Column="2" Grid.Row="3" Grid.ColumnSpan="3" Margin="183,51,24,45" />
+        <TextBlock FontSize="15"  Foreground="Purple" Text="Mô Tả :" Grid.Column="2" Grid.Row="3" Margin="79,83,133,0"/>
+        <TextBlock FontSize="15" TextWrapping="Wrap"  Name="tbMoTa" Text="MT" Grid.Column="2" Grid.Row="3" Grid.ColumnSpan="4" Margin="183,83,253,0"/>
+        <TextBlock FontSize="15"  Foreground="Purple" Text="Xuất Xứ :" Grid.Column="2" Grid.Row="3" Margin="78,126,125,2" Grid.RowSpan="2"/>
+        <TextBlock FontSize="15"  Name="tbXuatXu" Text="xx" Grid.Column="2" Grid.Row="4" Grid.ColumnSpan="3" Margin="183,0,54,0" />
+        <TextBlock FontSize="15"  Foreground="Purple" Text="Loại Sản Phẩm:" Grid.Column="2" Grid.Row="5" Margin="79,3,85,10"/>
+        <TextBlock FontSize="15" Name="tbLoai" Text="lsp" Grid.Column="2" Grid.Row="5" Grid.ColumnSpan="3" Margin="183,3,19,10" />
+        <TextBlock FontSize="15" Foreground="Purple" Text="Nhà Sản Xuất:" Grid.Column="2" Grid.Row="6" Margin="77,0,88,40" Grid.RowSpan="2"/>
+        <TextBlock FontSize="15" Name="tbNSX" Text="nsx" Grid.Column="2" Grid.Row="6" Grid.ColumnSpan="3" Margin="183,0,7,40" Grid.RowSpan="2"/>
+
+        <GroupBox HorizontalAlignment="Left" Margin="10,6,0,0" VerticalAlignment="Top" Width="440" Height="278" Grid.ColumnSpan="3" Grid.Row="7" Grid.RowSpan="8">
+            <GroupBox.Header>
+                <TextBlock FontSize="15" Foreground="Navy">
+                            MÔ TẢ CHI TIẾT
+                </TextBlock>
+            </GroupBox.Header>
+            <TextBlock FontSize="15" Name="txtmotachitiet" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap"  VerticalAlignment="Top"/>
+        </GroupBox>
+
+
+        <Grid Name="gridCL" Background="Aqua" Grid.Column="5" HorizontalAlignment="Left" Height="303" Margin="45,26,0,0" Grid.RowSpan="6" VerticalAlignment="Top" Width="237" Grid.ColumnSpan="2">
+            <Expander ExpandDirection="Down" IsExpanded="True" Background="White" BorderBrush="Brown" BorderThickness="2" >
+                <Expander.Header>
+                    <WrapPanel>
+                        <TextBlock  Padding="5"  Foreground="Brown" FontWeight="DemiBold" FontSize="20" FontFamily=".VnUniverse" Text="5 SẢN PHẨM CÙNG HÃNG" Background="Beige">
+                            <TextBlock.Style>
+                                <Style  TargetType="{x:Type TextBlock}">
+                                    <Style.Resources>
+                                        <Storyboard x:Key="FadeStoryboard">
+                                            <DoubleAnimation Storyboard.TargetProperty="(TextBlock.Opacity)" 
+                                From="0" To="1" Duration="0:0:0.5"
+                                RepeatBehavior="Forever" AutoReverse="True"/>
+                                        </Storyboard>
+                                    </Style.Resources>
+                                    <Style.Triggers>
+                                        <Trigger Property="Visibility" Value="Visible">
+                                            <Trigger.EnterActions>
+                                                <BeginStoryboard Storyboard="{StaticResource FadeStoryboard}"/>
+                                            </Trigger.EnterActions>
+                                        </Trigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </TextBlock.Style>
+                        </TextBlock>
+                        <!--<Image Source="/SHOP;component/img/hot2.gif"/>-->
+                    </WrapPanel>
+                </Expander.Header>
+                <ListView MinWidth="5" MinHeight="5" x:Name="stpanel" 
+                                        ScrollViewer.VerticalScrollBarVisibility="Auto" 
+                                         Background="Transparent" 
+                                       BorderThickness="0" ItemsSource="{Binding}">
+
+                    <!--1đoạn này để nhấn chuột phải-->
+                    <ListView.ContextMenu>
+                        <ContextMenu Width="200" Background="Aqua" FontWeight="Bold">
+                            <MenuItem Header="Đặt Hàng"  />
+                            <MenuItem Header="Refresh"  />
+                            <Separator/>
+                            <MenuItem  Header="Chi tiết"/>
+                        </ContextMenu>
+                    </ListView.ContextMenu>
+                    <!--1-->
+
+                    <!--2-->
+                    <ListView.ItemTemplate >
+                        <DataTemplate >
+                            <Border Background="AliceBlue" BorderBrush="Blue" BorderThickness="2"
+                                            CornerRadius="5"  Margin="8" ToolTip="{x:Null}" >
+                                <StackPanel  Width="160" Height="200" Orientation="Vertical" Background="Bisque">
+
+
+                                    <!--<Button  Background="Chocolate" Width="50" Height="30" Content="{Binding Path=MaSP}" Name="txTMuaHang" Click="txTMuaHang_Click" ></Button>-->
+                                    <WrapPanel>
+                                        <TextBlock Visibility="Hidden" x:Name="txtbloc"  Text="{Binding Path=MaSP, Mode=OneWay}" Margin="3" />
+                                        <Button Width="91" Click="Button_Click" Background="Pink">
+                                            <Image Source="/SHOP;component/img/buttonoder.png"/>
+                                        </Button>
+                                    </WrapPanel>
+                                    <Image  Source="{Binding Path=Hinh}" Margin="0,1,0,0" Width="200" Height="100" >
+                                        <Image.ToolTip>
+                                            <ToolTip>
+                                                <TextBlock Text="{Binding Path=ChiTiet}" TextAlignment="Left"  MaxWidth="250" Height="300" TextWrapping="WrapWithOverflow"/>
+                                            </ToolTip>
+                                        </Image.ToolTip>
+                                    </Image>
+                                    <TextBlock TextWrapping="Wrap" Foreground="Navy" FontSize="14"  Text="{Binding Path=TenSP}" TextAlignment="Center" Width="150" Height="45"/>
+                                    <TextBlock Foreground="Red" Text="{Binding Path=GiaSP ,StringFormat={}{0:0,0 VNĐ}}"  TextAlignment="Center"  Width="150" Height="30"/>
+
+                                </StackPanel>
+                            </Border>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                    <!--2-->
+
+                    <ListView.Resources>
+                        <Style TargetType="ListViewItem">
+                            <Style.Triggers>
+                                <MultiTrigger>
+                                    <MultiTrigger.Conditions>
+                                        <Condition Property="Border.IsMouseOver" Value="True"/>
+                                        <Condition Property="IsSelected" Value="False"/>
+                                    </MultiTrigger.Conditions>
+                                    <Setter Property="Background" Value="Orange" />
+                                </MultiTrigger>
+                            </Style.Triggers>
+                        </Style>
+                        <Style TargetType="ListView">
+                            <Style.Triggers>
+                                <Trigger Property="HasItems" Value="False">
+                                    <Setter Property="Template">
+                                        <Setter.Value>
+                                            <ControlTemplate>
+                                                <TextBlock Foreground="Navy"  FontSize="22" FontFamily="SimSun">KHÔNG CÓ SẢN PHẨM</TextBlock>
+                                            </ControlTemplate>
+                                        </Setter.Value>
+                                    </Setter>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </ListView.Resources>
+                    <ListView.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <WrapPanel Width="{Binding (FrameworkElement.ActualWidth), RelativeSource={RelativeSource AncestorType=ScrollContentPresenter}}"
+    			            ItemWidth="{Binding (ListView.View).ItemWidth, RelativeSource={RelativeSource AncestorType=ListView}}"
+    			            MinWidth="{Binding ItemWidth, RelativeSource={RelativeSource Self}}"
+    			            ItemHeight="{Binding (ListView.View).ItemHeight, RelativeSource={RelativeSource AncestorType=ListView}}" />
+                        </ItemsPanelTemplate>
+                    </ListView.ItemsPanel>
+                </ListView>
+            </Expander>
+
+        </Grid>
+
+        <!--SẢN PHẨM CÙNG HÃNG-->
+        <Grid Name="gridCH" Background="Pink" Grid.Column="5" HorizontalAlignment="Left" Height="320" Margin="45,10,0,0" Grid.Row="6" Grid.RowSpan="9" VerticalAlignment="Top" Width="237" Grid.ColumnSpan="2">
+            <Expander ExpandDirection="Down" IsExpanded="True" BorderBrush="Brown" BorderThickness="2" Background="White" >
+                <Expander.Header>
+                    <WrapPanel>
+                        <TextBlock  Padding="5"  Foreground="Navy" FontWeight="DemiBold" FontSize="20" FontFamily=".VnUniverse" Text="5 SẢN PHẨM CÙNG LOẠI">
+                            <TextBlock.Style>
+                                <Style  TargetType="{x:Type TextBlock}">
+                                    <Style.Resources>
+                                        <Storyboard x:Key="FadeStoryboard">
+                                            <DoubleAnimation Storyboard.TargetProperty="(TextBlock.Opacity)" 
+                                From="0" To="1" Duration="0:0:0.5"
+                                RepeatBehavior="Forever" AutoReverse="True"/>
+                                        </Storyboard>
+                                    </Style.Resources>
+                                    <Style.Triggers>
+                                        <Trigger Property="Visibility" Value="Visible">
+                                            <Trigger.EnterActions>
+                                                <BeginStoryboard Storyboard="{StaticResource FadeStoryboard}"/>
+                                            </Trigger.EnterActions>
+                                        </Trigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </TextBlock.Style>
+                        </TextBlock>
+                        <!--<Image Source="/SHOP;component/img/hot2.gif"/>-->
+                    </WrapPanel>
+                </Expander.Header>
+                <ListView MinWidth="5" MinHeight="5" x:Name="stpanel1" 
+                                        ScrollViewer.VerticalScrollBarVisibility="Auto" 
+                                         Background="Transparent" 
+                                      BorderThickness="0" ItemsSource="{Binding}" Margin="0,-2,-2,-5">
+
+                    <!--1đoạn này để nhấn chuột phải-->
+                    <ListView.ContextMenu>
+                        <ContextMenu Width="200" Background="Aqua" FontWeight="Bold">
+                            <MenuItem Header="Đặt Hàng"  />
+                            <MenuItem Header="Refresh" />
+                            <Separator/>
+                            <MenuItem  Header="Chi tiết"/>
+                        </ContextMenu>
+                    </ListView.ContextMenu>
+                    <!--1-->
+
+                    <!--2-->
+                    <ListView.ItemTemplate >
+                        <DataTemplate >
+                            <Border Background="AliceBlue" BorderBrush="Blue" BorderThickness="2"
+                                            CornerRadius="5"  Margin="8" ToolTip="{x:Null}" >
+                                <StackPanel  Width="160" Height="200" Orientation="Vertical" Background="Bisque">
+
+
+                                    <!--<Button  Background="Chocolate" Width="50" Height="30" Content="{Binding Path=MaSP}" Name="txTMuaHang" Click="txTMuaHang_Click" ></Button>-->
+                                    <WrapPanel>
+                                        <TextBlock Visibility="Hidden" x:Name="txtbloc"  Text="{Binding Path=MaSP, Mode=OneWay}" Margin="3" />
+                                        <Button Width="91" Click="Button_Click" Background="Pink">
+                                            <Image Source="/SHOP;component/img/buttonoder.png"/>
+                                        </Button>
+                                    </WrapPanel>
+                                    <Image  Source="{Binding Path=Hinh}" Margin="0,1,0,0" Width="200" Height="100" >
+                                        <Image.ToolTip>
+                                            <ToolTip>
+                                                <TextBlock Text="{Binding Path=ChiTiet}" TextAlignment="Left"  MaxWidth="250" Height="300" TextWrapping="WrapWithOverflow"/>
+                                            </ToolTip>
+                                        </Image.ToolTip>
+                                    </Image>
+                                    <TextBlock TextWrapping="Wrap" Foreground="Navy" FontSize="14"  Text="{Binding Path=TenSP}" TextAlignment="Center" Width="150" Height="45"/>
+                                    <TextBlock Foreground="Red" Text="{Binding Path=GiaSP ,StringFormat={}{0:0,0 VNĐ}}"  TextAlignment="Center"  Width="150" Height="30"/>
+
+                                </StackPanel>
+                            </Border>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                    <!--2-->
+
+                    <ListView.Resources>
+                        <Style TargetType="ListViewItem">
+                            <Style.Triggers>
+                                <MultiTrigger>
+                                    <MultiTrigger.Conditions>
+                                        <Condition Property="Border.IsMouseOver" Value="True"/>
+                                        <Condition Property="IsSelected" Value="False"/>
+                                    </MultiTrigger.Conditions>
+                                    <Setter Property="Background" Value="Orange" />
+                                </MultiTrigger>
+                            </Style.Triggers>
+                        </Style>
+                        <Style TargetType="ListView">
+                            <Style.Triggers>
+                                <Trigger Property="HasItems" Value="False">
+                                    <Setter Property="Template">
+                                        <Setter.Value>
+                                            <ControlTemplate>
+                                                <TextBlock Foreground="Navy"  FontSize="22" FontFamily="SimSun">KHÔNG CÓ SẢN PHẨM</TextBlock>
+                                            </ControlTemplate>
+                                        </Setter.Value>
+                                    </Setter>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </ListView.Resources>
+                    <ListView.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <WrapPanel Width="{Binding (FrameworkElement.ActualWidth), RelativeSource={RelativeSource AncestorType=ScrollContentPresenter}}"
+    			            ItemWidth="{Binding (ListView.View).ItemWidth, RelativeSource={RelativeSource AncestorType=ListView}}"
+    			            MinWidth="{Binding ItemWidth, RelativeSource={RelativeSource Self}}"
+    			            ItemHeight="{Binding (ListView.View).ItemHeight, RelativeSource={RelativeSource AncestorType=ListView}}" />
+                        </ItemsPanelTemplate>
+                    </ListView.ItemsPanel>
+                </ListView>
+            </Expander>
+
+        </Grid>
+        <!---dến đay-->
+        <Button Name="btnMuaTrongCt" Grid.Column="3" HorizontalAlignment="Left"  Grid.Row="11" VerticalAlignment="Top" Width="34" Margin="9,5,0,0" Click="btnMuaTrongCt_Click">
+            <Grid Width="46" Height="20" >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="13*"/>
+                    <ColumnDefinition Width="45*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Image Grid.RowSpan="2"  HorizontalAlignment="Left" Source="/SHOP;component/img/icongio.png" Width="35" Margin="0,-1,0,-6" Grid.ColumnSpan="2" />
+            </Grid>
+        </Button>
+        <StackPanel  Grid.Column="4"  Grid.Row="10" Margin="0,31,0,5" Grid.RowSpan="2">
+            <!--Đoạn sử lí updown-->
+            <local:NumericBox Margin="0,6,10,6" Minimum="1" Maximum="100" Height="32" x:Name="txtsl" Value="1" />
+        </StackPanel>
+        <TextBlock Name="txtID"></TextBlock>
+        <TextBlock Name="txtMaTKCT" Grid.Column="1"></TextBlock>
+    </Grid>
+</Window>
